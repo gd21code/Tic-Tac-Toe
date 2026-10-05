@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(183, 183, 233);
+}
+
+h1 {
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#message {
+    text-align: center;
+}
+
+#gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 300px;
+    place-content: center;
+    margin: auto;
+    background-color: white;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.square:nth-child(1) {
+    border-top: none;
+    border-left: none;
+}
+
+.square:nth-child(2) {
+    border-top: none;
+}
+
+.square:nth-child(3) {
+    border-top: none;
+    border-right: none;
+}
+
+.square:nth-child(4) {
+    border-left: none;
+}
+
+.square:nth-child(6) {
+    border-right: none;
+}
+
+.square:nth-child(7) {
+    border-left: none;
+    border-bottom: none;
+}
+
+.square:nth-child(8) {
+    border-bottom: none;
+}
+
+.square:nth-child(9) {
+    border-right: none;
+    border-bottom: none;
+}
+
+.square:hover {
+    background-color: skyblue;
+}
